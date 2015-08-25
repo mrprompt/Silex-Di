@@ -11,6 +11,8 @@ namespace MrPrompt\Tests\Silex\Di;
 
 use DerAlex\Silex\YamlConfigServiceProvider;
 use MrPrompt\Silex\Di\Container as DiServiceProvider;
+use MrPrompt\Tests\Silex\Resources\Foo;
+use MrPrompt\Tests\Silex\Resources\Bar;
 use PHPUnit_Framework_TestCase;
 use Silex\Application;
 
@@ -52,7 +54,10 @@ class ContainerTest extends PHPUnit_Framework_TestCase
     {
         $this->app->register(new DiServiceProvider());
 
-        $this->assertNotEmpty($this->app['config']['services']);
-        $this->assertTrue($this->app['config']);
+        $this->assertArrayHasKey('service.bar', $this->app);
+        $this->assertArrayHasKey('service.foo', $this->app);
+        $this->assertEquals('MrPrompt\Tests\Silex\Resources\Bar', $this->app['service.bar']->getName());
+        $this->assertInstanceOf(Bar::class, $this->app['service.bar']);
+        $this->assertInstanceOf(Foo::class, $this->app['service.foo']);
     }
 }

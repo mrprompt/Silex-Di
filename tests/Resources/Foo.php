@@ -1,5 +1,5 @@
 <?php
-namespace MrPrompt\Tests\Silex\Di\Resources;
+namespace MrPrompt\Tests\Silex\Resources;
 
 class Foo
 {
@@ -8,6 +8,6 @@ class Foo
      */
     public function __construct(Bar $bar)
     {
-        echo $bar->getName();
+        // :)
     }
 }

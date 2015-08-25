@@ -11,8 +11,9 @@
   ],
   "autoload": {
     "psr-4": {
-      "MrPrompt\\": "src/",
-      "MrPrompt\\Tests\\": "tests/"
+      "MrPrompt\\Silex\\Di\\": "src/Di/",
+      "MrPrompt\\Tests\\Silex\\Di\\": "tests/Di/",
+      "MrPrompt\\Tests\\Silex\\Resources\\": "tests/Resources/"
     }
   },
   "require": {

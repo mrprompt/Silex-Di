@@ -1,8 +1,8 @@
 # Services
 services:
-  bar:
-    - \MrPrompt\Tests\Silex\Di\Resources\Bar
+  service.bar:
+    - \MrPrompt\Tests\Silex\Resources\Bar
 
-  foo.bar:
-    - \MrPrompt\Tests\Silex\Di\Resources\Foo
-    - bar
+  service.foo:
+    - \MrPrompt\Tests\Silex\Resources\Foo
+    - service.bar

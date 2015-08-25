@@ -8,11 +8,11 @@
          stopOnFailure="false"
          stopOnIncomplete="false"
          stopOnRisky="false"
-         verbose="true"
-         bootstrap="vendor/autoload.php">
+         bootstrap="vendor/autoload.php"
+         verbose="true">
     <testsuites>
         <testsuite name="Tests">
-            <directory>./tests/</directory>
+            <directory>./tests</directory>
         </testsuite>
     </testsuites>
 

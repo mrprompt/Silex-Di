@@ -1,5 +1,5 @@
 <?php
-namespace MrPrompt\Tests\Silex\Di\Resources;
+namespace MrPrompt\Tests\Silex\Resources;
 
 class Bar
 {
