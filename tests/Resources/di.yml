@@ -1,0 +1,8 @@
+# Services
+services:
+  bar:
+    - \MrPrompt\Tests\Silex\Di\Resources\Bar
+
+  foo.bar:
+    - \MrPrompt\Tests\Silex\Di\Resources\Foo
+    - bar
