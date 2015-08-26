@@ -1,4 +1,5 @@
-# silex-di-container-provider [![Build Status](https://travis-ci.org/mrprompt/silex-di-container-provider.png)](https://travis-ci.org/mrprompt/silex-di-container-provider)
+# silex-di-container-provider [![Build Status](https://travis-ci.org/mrprompt/silex-di-container-provider.png)](https://travis-ci.org/mrprompt/silex-di-container-provider) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/7b8ed0fc-2f5a-4e6f-84fd-030430a3482e/mini.png)](https://insight.sensiolabs.com/projects/7b8ed0fc-2f5a-4e6f-84fd-030430a3482e)
+
 A simple dependency injection container to Silex.
 
 # Install
