@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Silex-di-container-provider by mrprompt</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Silex-di-container-provider</h1>
+        <p>A simple dependency injection container builder to Silex</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/mrprompt/silex-di-container-provider" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/mrprompt/silex-di-container-provider/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/mrprompt/silex-di-container-provider/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="silex-di-container-provider" class="anchor" href="#silex-di-container-provider" aria-hidden="true"><span class="octicon octicon-link"></span></a>silex-di-container-provider</h1>
+
+<p><a href="https://travis-ci.org/mrprompt/silex-di-container-provider"><img src="https://travis-ci.org/mrprompt/silex-di-container-provider.png" alt="Build Status"></a> 
+<a href="https://insight.sensiolabs.com/projects/7b8ed0fc-2f5a-4e6f-84fd-030430a3482e"><img src="https://insight.sensiolabs.com/projects/7b8ed0fc-2f5a-4e6f-84fd-030430a3482e/mini.png" alt="SensioLabsInsight"></a>
+<a href="https://www.versioneye.com/user/projects/55ddde652383e9002500006d"><img src="https://www.versioneye.com/user/projects/55ddde652383e9002500006d/badge.svg?style=flat" alt="Dependency Status"></a>
+<a href="http://isitmaintained.com/project/mrprompt/silex-di-container-provider" title="Average time to resolve an issue"><img src="http://isitmaintained.com/badge/resolution/mrprompt/silex-di-container-provider.svg" alt="Average time to resolve an issue"></a>
+<a href="http://isitmaintained.com/project/mrprompt/silex-di-container-provider" title="Percentage of issues still open"><img src="http://isitmaintained.com/badge/open/mrprompt/silex-di-container-provider.svg" alt="Percentage of issues still open"></a></p>
+
+<p>a simple dependency injection container to Silex.</p>
+
+<h1>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h1>
+
+<pre><code>composer require mrprompt/silex-di-container-provider
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Simple create a di.yml - or other name, of course - file with the structure:</p>
+
+<pre><code>services:
+  alias1:
+    - Full\Class\Name
+    - dependency1
+
+  alias2:
+    - Full\ClassTwo\Name
+    - dependency1
+    - dependency2
+
+</code></pre>
+
+<p>When:</p>
+
+<ul>
+<li>
+<em>alias1</em> - Is the alias from Silex</li>
+<li>
+<em>Full\Class\Name</em> and <em>Full\ClassTwo\Name</em> - The class name to initialize</li>
+<li>
+<em>dependency1</em> and <em>dependecy2</em> - Dependencies from the class, must be an alias previously created</li>
+</ul>
+
+<h2>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing</h2>
+
+<p>Just run <em>phpunit</em> without parameters</p>
+
+<pre><code>phpunit
+</code></pre>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/mrprompt">mrprompt</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
