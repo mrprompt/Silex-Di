@@ -1,9 +1,10 @@
 # Silex DI Builder 
-[![Build Status](https://travis-ci.org/mrprompt/Silex-di-builder.png)](https://travis-ci.org/mrprompt/Silex-di-builder) 
+[![Build Status](https://travis-ci.org/mrprompt/silex-di-builder.png)](https://travis-ci.org/mrprompt/silex-di-builder) 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/7b8ed0fc-2f5a-4e6f-84fd-030430a3482e/mini.png)](https://insight.sensiolabs.com/projects/7b8ed0fc-2f5a-4e6f-84fd-030430a3482e)
 [![Dependency Status](https://www.versioneye.com/user/projects/55ddde652383e9002500006d/badge.svg?style=flat)](https://www.versioneye.com/user/projects/55ddde652383e9002500006d)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/mrprompt/Silex-di-builder.svg)](http://isitmaintained.com/project/mrprompt/Silex-di-builder "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/mrprompt/Silex-di-builder.svg)](http://isitmaintained.com/project/mrprompt/Silex-di-builder "Percentage of issues still open")
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/430370f1ef0a45d78cb019d125ff95a7)](https://www.codacy.com/app/mrprompt/silex-di-builder)
 
 A simple dependency injection builder to Silex based on YAML file config.
 
