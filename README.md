@@ -6,7 +6,6 @@
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/mrprompt/Silex-di-builder.svg)](http://isitmaintained.com/project/mrprompt/Silex-di-builder "Percentage of issues still open")
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/430370f1ef0a45d78cb019d125ff95a7)](https://www.codacy.com/app/mrprompt/silex-di-builder)
 [![Code Climate](https://codeclimate.com/github/mrprompt/silex-di-builder/badges/gpa.svg)](https://codeclimate.com/github/mrprompt/silex-di-builder)
-[![Issue Count](https://codeclimate.com/github/mrprompt/silex-di-builder/badges/issue_count.svg)](https://codeclimate.com/github/mrprompt/silex-di-builder)
 
 A simple dependency injection builder to Silex based on YAML file config.
 
