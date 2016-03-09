@@ -20,11 +20,24 @@ use Silex\ServiceProviderInterface;
 final class Container implements ContainerInterface, ServiceProviderInterface
 {
     /**
+     * @var $array
+     */
+    private $services;
+
+    /**
+     * Constructor
+     */
+    public function __construct(array $container)
+    {
+        $this->services = $container;
+    }
+
+    /**
      * @see \Silex\ServiceProviderInterface::register()
      */
     public function register(Application $app)
     {
-        foreach ($app['config']['services'] as $serviceName => $serviceDetails) {
+        foreach ($this->services as $serviceName => $serviceDetails) {
             /* @var $classService string */
             $service = array_shift($serviceDetails);
 

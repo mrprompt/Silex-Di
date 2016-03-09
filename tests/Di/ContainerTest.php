@@ -28,16 +28,23 @@ class ContainerTest extends PHPUnit_Framework_TestCase
      */
     private $app;
 
+    /**
+     * Bootstrap
+     */
     public function setUp()
     {
         parent::setUp();
 
         $app = new Application;
         $app->register(new YamlConfigServiceProvider(__DIR__ . '/../Resources/di.yml'));
+        $app->register(new DiServiceProvider($app['config']['services']));
 
         $this->app = $app;
     }
 
+    /**
+     * Shutdown
+     */
     public function tearDown()
     {
         $this->app = null;
@@ -52,11 +59,17 @@ class ContainerTest extends PHPUnit_Framework_TestCase
      */
     public function registerMustBeCreateResources()
     {
-        $this->app->register(new DiServiceProvider());
-
         $this->assertArrayHasKey('service.bar', $this->app);
         $this->assertArrayHasKey('service.foo', $this->app);
-        $this->assertEquals('MrPrompt\Tests\Silex\Resources\Bar', $this->app['service.bar']->getName());
+    }
+
+    /**
+     * Test registration
+     *
+     * @test
+     */
+    public function getResourceDefinedMustBeReturnSameInstance()
+    {
         $this->assertInstanceOf(Bar::class, $this->app['service.bar']);
         $this->assertInstanceOf(Foo::class, $this->app['service.foo']);
     }

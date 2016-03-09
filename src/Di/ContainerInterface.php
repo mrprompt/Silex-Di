@@ -16,8 +16,5 @@ namespace MrPrompt\Silex\Di;
  */
 interface ContainerInterface
 {
-    /**
-     * @var string
-     */
-    const DI_CONTAINER = 'di.container.service';
+    // :)
 }
