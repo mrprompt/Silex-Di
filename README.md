@@ -48,7 +48,9 @@ use MrPrompt\Silex\Di\Container as DiServiceProvider;
 ....
 
 $app->register(new YamlConfigServiceProvider(__DIR__ . '/../Resources/di.yml'));
-$app->register(new DiServiceProvider());
+$app->register(new DiServiceProvider($app['config']['services']));
+ 
+# $app['config']['services'] is an array with yml content, created by YamlConfigServiceProvider
 
 ```
 
