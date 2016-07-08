@@ -1,5 +1,5 @@
 {
-  "name": "mrprompt/silex-di-builder",
+  "name": "SilexFriends/Di",
   "description": "A simple dependency injection builder to Silex",
   "type": "library",
   "license": "MIT",
@@ -11,9 +11,13 @@
   ],
   "autoload": {
     "psr-4": {
-      "MrPrompt\\Silex\\Di\\": "src/Di/",
-      "MrPrompt\\Tests\\Silex\\Di\\": "tests/Di/",
-      "MrPrompt\\Tests\\Silex\\Resources\\": "tests/Resources/"
+      "SilexFriends\\Di\\": "src/Di/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SilexFriends\\Tests\\Di\\": "tests/Di/",
+      "SilexFriends\\Tests\\Resources\\": "tests/Resources/"
     }
   },
   "require": {

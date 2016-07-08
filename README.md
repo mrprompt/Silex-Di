@@ -12,7 +12,7 @@ A simple dependency injection builder to Silex based on YAML file config.
 # Install
 
 ```
-composer require mrprompt/silex-di-builder
+composer require SilexFriends/DI
 ```
 
 ## Usage
@@ -43,7 +43,7 @@ In your application bootstrap, register YAML Config Service Provider, with your 
 ```
 
 use DerAlex\Silex\YamlConfigServiceProvider;
-use MrPrompt\Silex\Di\Container as DiServiceProvider;
+use SilexFriends\DI\Container as DiServiceProvider;
 
 ....
 

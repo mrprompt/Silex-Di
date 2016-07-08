@@ -1,18 +1,10 @@
 <?php
-/**
- * This file is a part of mrprompt/silex-di-container-provider.
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- *
- * @license   MIT
- */
-namespace MrPrompt\Tests\Silex\Di;
+namespace SilexFriends\Tests\Di;
 
 use DerAlex\Silex\YamlConfigServiceProvider;
-use MrPrompt\Silex\Di\Container as DiServiceProvider;
-use MrPrompt\Tests\Silex\Resources\Foo;
-use MrPrompt\Tests\Silex\Resources\Bar;
+use SilexFriends\Di\Container as DiServiceProvider;
+use SilexFriends\Tests\Resources\Foo;
+use SilexFriends\Tests\Resources\Bar;
 use PHPUnit_Framework_TestCase;
 use Silex\Application;
 

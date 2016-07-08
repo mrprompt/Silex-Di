@@ -7,7 +7,7 @@
  *
  * @license   MIT
  */
-namespace MrPrompt\Tests\Silex\Resources;
+namespace SilexFriends\Tests\Resources;
 
 /**
  * Bar class
