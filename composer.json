@@ -1,5 +1,5 @@
 {
-  "name": "SilexFriends/Di",
+  "name": "silexfriends/di",
   "description": "A simple dependency injection builder to Silex",
   "type": "library",
   "license": "MIT",
