@@ -6,3 +6,8 @@ services:
   service.foo:
     - \SilexFriends\Tests\Resources\Foo
     - service.bar
+
+  service.foo-two:
+    - \SilexFriends\Tests\Resources\FooTwo
+    - 'hello'
+

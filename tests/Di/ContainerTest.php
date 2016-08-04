@@ -5,6 +5,7 @@ use DerAlex\Silex\YamlConfigServiceProvider;
 use SilexFriends\Di\Container as DiServiceProvider;
 use SilexFriends\Tests\Resources\Foo;
 use SilexFriends\Tests\Resources\Bar;
+use SilexFriends\Tests\Resources\FooTwo;
 use PHPUnit_Framework_TestCase;
 use Silex\Application;
 
@@ -53,6 +54,7 @@ class ContainerTest extends PHPUnit_Framework_TestCase
     {
         $this->assertArrayHasKey('service.bar', $this->app);
         $this->assertArrayHasKey('service.foo', $this->app);
+        $this->assertArrayHasKey('service.foo-two', $this->app);
     }
 
     /**
@@ -64,5 +66,18 @@ class ContainerTest extends PHPUnit_Framework_TestCase
     {
         $this->assertInstanceOf(Bar::class, $this->app['service.bar']);
         $this->assertInstanceOf(Foo::class, $this->app['service.foo']);
+        $this->assertInstanceOf(FooTwo::class, $this->app['service.foo-two']);
     }
+
+    /**
+     * @test
+     */
+     public function getNameFromFooTwo()
+     {
+         $name = 'hello';
+
+         $result = $this->app['service.foo-two']->getName();
+
+         $this->assertEquals($name, $result);
+     }
 }
