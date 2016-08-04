@@ -36,7 +36,7 @@ When:
 
 - *alias1* - Is the alias from Silex
 - *Full\Class\Name* and *Full\ClassTwo\Name* - The class name to initialize
-- *dependency1* and *dependecy2* - Dependencies from the class, must be an alias previously created
+- *dependency1* and *dependecy2* - Dependencies from the class, must be an alias previously created or anything
 
 In your application bootstrap, register YAML Config Service Provider, with your DI file
 
