@@ -14,11 +14,18 @@ class FooTwo
     private $name;
 
     /**
-     * @param mixed $name
+     * @var array
      */
-    public function __construct($name = null)
+    private $parameters;
+
+    /**
+     * @param mixed $name
+     * @param array $parameters
+     */
+    public function __construct($name = null, array $parameters)
     {
         $this->name = $name;
+        $this->parameters = $parameters;
     }
 
     /**
@@ -27,5 +34,10 @@ class FooTwo
     public function getName()
     {
         return $this->name;
+    }
+
+    public function getParameters()
+    {
+        return $this->parameters;
     }
 }

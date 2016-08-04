@@ -80,4 +80,15 @@ class ContainerTest extends PHPUnit_Framework_TestCase
 
          $this->assertEquals($name, $result);
      }
+
+     /**
+      * @test
+      */
+      public function getParametersFromFooTwo()
+      {
+          $expected = ["param1" => "hello", "param2" => "world"];
+          $result   = $this->app['service.foo-two']->getParameters();
+
+          $this->assertEquals($expected, $result);
+      }
 }

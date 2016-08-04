@@ -35,6 +35,10 @@ final class Container implements ContainerInterface, ServiceProviderInterface
 
             /* @var $args array */
             $args = array_map(function($row) use($app) {
+                if (!is_numeric($row) && !is_string($row)) {
+                    return $row;
+                }
+
                 if ($app->offsetExists($row)) {
                     return $app[$row];
                 }

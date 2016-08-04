@@ -10,4 +10,6 @@ services:
   service.foo-two:
     - \SilexFriends\Tests\Resources\FooTwo
     - 'hello'
-
+    -
+      param1: 'hello'
+      param2: 'world'
