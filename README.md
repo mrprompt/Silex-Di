@@ -1,5 +1,5 @@
 # Silex DI Builder 
-[![Build Status](https://travis-ci.org/mrprompt/silex-di-builder.png)](https://travis-ci.org/mrprompt/silex-di-builder) 
+[![Build Status](https://travis-ci.org/SilexFriends/Di.png)](https://travis-ci.org/SilexFriends/Di) 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/7b8ed0fc-2f5a-4e6f-84fd-030430a3482e/mini.png)](https://insight.sensiolabs.com/projects/7b8ed0fc-2f5a-4e6f-84fd-030430a3482e)
 [![Dependency Status](https://www.versioneye.com/user/projects/55ddde652383e9002500006d/badge.svg?style=flat)](https://www.versioneye.com/user/projects/55ddde652383e9002500006d)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/mrprompt/Silex-di-builder.svg)](http://isitmaintained.com/project/mrprompt/Silex-di-builder "Average time to resolve an issue")
