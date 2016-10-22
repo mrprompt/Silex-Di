@@ -1,5 +1,5 @@
 {
-  "name": "silexfriends/di",
+  "name": "mrprompt/silex-di-builder",
   "description": "A simple dependency injection builder to Silex",
   "type": "library",
   "license": "MIT",
@@ -26,6 +26,7 @@
   "require-dev": {
     "phpunit/phpunit": "^4.8",
     "silex/silex": "1.*@dev",
-    "deralex/yaml-config-service-provider": "~1.0"
+    "deralex/yaml-config-service-provider": "~1.0",
+    "codeclimate/php-test-reporter": "dev-master"
   }
 }
